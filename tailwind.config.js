@@ -9,6 +9,16 @@ module.exports = {
     extend: {
       // https://vercel.com/design/color
       colors: {
+        primary: {
+          light: "#5f6576",
+          DEFAULT: "#383f54",
+          dark: "#272c3a",
+        },
+        secondary: {
+          light: "f7d952",
+          DEFAULT: "#f5d027",
+          dark: "#EEB200",
+        },
         vercel: {
           pink: '#FF0080',
           blue: '#0070F3',

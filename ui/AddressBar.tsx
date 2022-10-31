@@ -25,7 +25,7 @@ const AddressBar = () => {
       </div>
       <div className="flex space-x-1 text-sm font-medium">
         <div>
-          <span className="px-2 text-zinc-500">acme.com</span>
+          <span className="px-2 text-zinc-500">daniiel.dev</span>
         </div>
         {pathname ? (
           <>

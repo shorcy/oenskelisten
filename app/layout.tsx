@@ -11,9 +11,9 @@ export default function RootLayout({
   return (
     <html>
       <head>
-        <title>Next.js Turbopack App Directory Playground</title>
+        <title>Daniiel playground</title>
       </head>
-      <body className="overflow-y-scroll bg-zinc-900">
+      <body className="overflow-y-scroll bg-black">
         <div className="grid grid-cols-[1fr,minmax(auto,240px),min(800px,100%),1fr] gap-x-8 py-8">
           <div className="col-start-2">
             <GlobalNav />
