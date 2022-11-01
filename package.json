@@ -18,6 +18,8 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@headlessui/react": "1.7.3",
+    "@heroicons/react": "2.0.12",
     "clsx": "1.2.1",
     "concurrently": "7.5.0",
     "next": "latest",
