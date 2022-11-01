@@ -1,9 +1,4 @@
-'use client';
-
-import { demos } from '@/lib/demos';
-import clsx from 'clsx';
-import Link from 'next/link';
-
+"use client";
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
