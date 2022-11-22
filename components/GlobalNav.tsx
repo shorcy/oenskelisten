@@ -73,13 +73,14 @@ export default function GlobalNav() {
       <Popover className="relative bg-white">
       <div className="flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div>
-          <a href="#" className="flex">
+          <a href="/" className="flex justify-center items-center">
             <span className="sr-only">Ønskelisten.dk</span>
             <img
               className="h-8 w-auto sm:h-10"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-              alt=""
+              src="/logo.svg"
+              alt="logo"
             />
+            <h1 className='pl-4 text-2xl font-bold'>Ønskelisten</h1>
           </a>
         </div>
         <div className="-my-2 -mr-2 md:hidden">
@@ -146,7 +147,7 @@ export default function GlobalNav() {
                               </span>
                             </div>
                             <p className="mt-1 text-sm text-gray-500">
-                              Opret et ønskeliste for dine medarbejdere.
+                              Opret katalog af ønsker for dine medarbejdere.
                             </p>
                           </a>
                         </div>
@@ -210,13 +211,13 @@ export default function GlobalNav() {
           </Popover.Group>
           <div className="flex items-center md:ml-12">
             <a href="#" className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Sign in
+              Tilmeld
             </a>
             <a
               href="#"
               className="ml-8 inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
             >
-              Sign up
+              Log ind
             </a>
           </div>
         </div>
