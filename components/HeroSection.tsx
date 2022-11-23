@@ -121,6 +121,8 @@ const HeroSection = ({ newsMessage, title, subTitle }: { newsMessage: string, ti
                                 className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
                                 src="/dashboard.webp"
                                 alt="illustration"
+                                width={850}
+                                height={600}
                             />
                         </div>
                     </div>
