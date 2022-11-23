@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
 
 const HeroSection = ({ newsMessage, title, subTitle }: { newsMessage: string, title: string, subTitle: string }) => {
+    const [email, setEmail] = useState('');
+
+    const handleNewsletterSignup = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        fetch("/api/signup-newsletter", {
+            method: "POST", 
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+              },
+            body: JSON.stringify({
+                email,
+            })
+        })
+
+        setEmail("");
+
+    }
+
     return (
         <div className="bg-white pb-8 sm:pb-12 lg:pb-12">
             <div className="overflow-hidden pt-8 sm:pt-12 lg:relative lg:py-48">
@@ -27,7 +47,7 @@ const HeroSection = ({ newsMessage, title, subTitle }: { newsMessage: string, ti
                                     {subTitle}
                                 </p>
                             </div>
-                            <form action="#" className="mt-12 sm:flex sm:w-full sm:max-w-lg">
+                            <form onSubmit={handleNewsletterSignup} className="mt-12 sm:flex sm:w-full sm:max-w-lg">
                                 <div className="min-w-0 flex-1">
                                     {/* <div className="relative rounded-md border border-gray-300 px-5 py-3 shadow-sm focus-within:border-indigo-600 focus-within:ring-1 focus-within:ring-indigo-600">
                                         <label
@@ -51,6 +71,8 @@ const HeroSection = ({ newsMessage, title, subTitle }: { newsMessage: string, ti
                                         id="hero-email"
                                         type="email"
                                         required
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
                                         className="block w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                                         placeholder="Indtast din email her"
                                     />
@@ -97,7 +119,7 @@ const HeroSection = ({ newsMessage, title, subTitle }: { newsMessage: string, ti
                         <div className="relative -mr-40 pl-4 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
                             <img
                                 className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                                src="https://tailwindui.com/img/component-images/top-nav-with-multi-column-layout-screenshot.jpg"
+                                src="/dashboard.jpg"
                                 alt=""
                             />
                         </div>

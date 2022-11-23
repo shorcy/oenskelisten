@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:image:width" content="300" />
                     <meta property="og:image:height" content="300" /> */}
+                    <meta property="title" content="Ønskelisten | Din fortrukkende ønskeseddel online." />
                     <meta property='og:title' content="Ønskelisten | Din fortrukkende ønskeseddel online." />
                     <meta property='og:description' content="Med en kombination af uddannelsen som webudvikler, og med et skarpt øje for design og UI/UX, skaber vækst og gør mig i stand til at arbejde helhjertet med frontend-development. På den måde styrker jeg brandets position med at være de bedste når det kommer til frontend-development, og samtidig skaber værdifulde resultater, som i sidste ende giver bedre købeklare leads." />
                     <link
