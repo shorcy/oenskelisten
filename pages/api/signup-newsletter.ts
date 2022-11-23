@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { emailSchema } from 'schemas/emailSchema';
 import validate from 'server/validate';
-const SibApiV3Sdk = require('sib-api-v3-sdk');
 
 function handler(req: NextApiRequest, res: NextApiResponse) {
   const url = 'https://api.sendinblue.com/v3/contacts';
