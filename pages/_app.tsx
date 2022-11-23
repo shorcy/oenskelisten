@@ -1,8 +1,9 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import GlobalNav from 'components/GlobalNav'
-import GlobalFooter from 'components/GlobalFooter'
-import Head from 'next/head'
+import '../styles/globals.css';
+import type { AppProps } from 'next/app';
+import GlobalNav from 'components/GlobalNav';
+import GlobalFooter from 'components/GlobalFooter';
+import Head from 'next/head';
+import { Analytics } from '@vercel/analytics/react';
 
 function App({ Component, pageProps }: AppProps) {
     return (
@@ -14,6 +15,7 @@ function App({ Component, pageProps }: AppProps) {
             <GlobalNav />
             <Component {...pageProps} />
             <GlobalFooter />
+            <Analytics />
         </>
     )
 }
