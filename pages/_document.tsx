@@ -12,8 +12,8 @@ export default class MyDocument extends Document {
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:image:width" content="300" />
                     <meta property="og:image:height" content="300" /> */}
-                    <meta property='og:title' content="Ønskelisten | Din fortrukkende ønskeseddel online." />
-                    <meta property='og:description' content="Står du og mangler et sted at gemme dine ønsker til dette års julegaveønsker? Så tryk ind på linket og få et overskueligt billede af det hele." />
+                    <meta property='og:title' content="Ønskelisten | Din fortrukkende ønskeseddel online" />
+                    <meta property='og:description' content="Del den med familie og venner, så de ved præcis, hvad du ønsker dig til dit næste bryllup, fødselsdag eller jul. Vores platform gør det nemt for dig at holde styr på dine ønsker og for dem at få inspiration til gaver." />
                     <link
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
