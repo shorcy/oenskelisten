@@ -5,9 +5,27 @@ export default class MyDocument extends Document {
         return (
             <Html lang="da">
                 <Head>
-                    {/* PWA primary color */}
+                <link rel="shortcut icon" href="/favicon.ico" />
+                    {/* Primary Meta Tags */}
+                    <title>Ønskelisten | Din fortrukkende ønskeseddel online</title>
+                    <meta name="title" content="Ønskelisten | Din fortrukkende ønskeseddel online" />
+                    <meta name="description" content="Opret din egen ønskeliste på vores platform. Del den med familie og venner, så de ved præcis, hvad du ønsker dig til dit næste bryllup, fødselsdag eller jul. Vores platform gør det nemt for dig at holde styr på dine ønsker og for dem at få inspiration til gaver." />
+                    
+                    {/* Open Graph / Facebook */}
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://oenskelisten.dk" />
+                    <meta property="og:title" content="Ønskelisten | Din fortrukkende ønskeseddel online" />
+                    <meta property="og:description" content="Opret din egen ønskeliste på vores platform. Del den med familie og venner, så de ved præcis, hvad du ønsker dig til dit næste bryllup, fødselsdag eller jul. Vores platform gør det nemt for dig at holde styr på dine ønsker og for dem at få inspiration til gaver." />
+                    <meta property="og:image" content="https://oenskelisten.dk/dashboard.webp" />
+
+                    {/* Twitter */}
+                    <meta property="twitter:card" content="summary_large_image" />
+                    <meta property="twitter:url" content="https://oenskelisten.dk" />
+                    <meta property="twitter:title" content="Ønskelisten | Din fortrukkende ønskeseddel online" />
+                    <meta property="twitter:description" content="Opret din egen ønskeliste på vores platform. Del den med familie og venner, så de ved præcis, hvad du ønsker dig til dit næste bryllup, fødselsdag eller jul. Vores platform gør det nemt for dig at holde styr på dine ønsker og for dem at få inspiration til gaver." />
+                    <meta property="twitter:image" content="https://oenskelisten.dk/dashboard.webp" />
                     {/* <meta name="theme-color" content={theme.palette.primary.main} /> */}
-                    <link rel="shortcut icon" href="/favicon.ico" />
+                    
                     {/* <meta property="og:image" content="/og-image.jpg" />
                     <meta property="og:image:type" content="image/jpg" />
                     <meta property="og:image:width" content="300" />
@@ -18,8 +36,7 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
                     />
-                    {/* Inject MUI styles first to match with the prepend: true configuration. */}
-                    {(this.props as any).emotionStyleTags}
+                
                 </Head>
                 <body>
                     <Main />
